@@ -1,0 +1,13 @@
+# Local environment files; keep safe examples trackable.
+.env
+.env.*
+!.env.example
+
+# Dependencies and generated output
+node_modules/
+dist/
+dist-ssr/
+coverage/
+
+# Local CodeZero workflow state
+.code0/
