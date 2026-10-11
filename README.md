@@ -20,6 +20,18 @@ TaskFlow is a MERN task-management application with account registration, sign-i
 
 The project keeps the frontend in `client/` and backend in `server/`. The API listens on port 5000 by default, and the Vite development server uses port 5173 by default.
 
+## AI Development Experience
+
+I used Code0 during development to plan and implement TaskFlow in reviewed steps. I treated its suggestions as drafts: I checked the relevant routes, models, middleware, and diffs, and kept changes within the agreed scope. I manually checked backend startup and the `/api/health` response, then used automated API tests with an in-memory MongoDB and the frontend production build to validate behavior. When startup and API issues appeared, I traced them through the server entry point and request flow, corrected the causes, and reran the relevant checks. Code0 assisted with the work; I reviewed decisions and results rather than treating AI output as independently completed or verified.
+
+## Specific Tasks Completed Using Code0
+
+1. Developed Express.js authentication and task-management APIs, including protected task operations scoped to each user.
+2. Created MongoDB/Mongoose user and task models and configured the database connection before the server accepts requests.
+3. Built React components for authentication and task CRUD, search, and filtering.
+4. Debugged application startup and API issues, and implemented rate limiting for registration and login.
+5. Ran backend tests and the frontend production build, then reviewed Git ignore rules and submission readiness.
+
 ## Prerequisites
 
 - A supported Node.js and npm installation
